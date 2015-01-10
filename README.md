@@ -3,9 +3,9 @@ game
 
 First project for CompSci 308 Spring 2015
 
-Name: 
+Name: Callie Mao 
 
-Date started:
+Date started: 1/8/2015
 
 Date finished:
 

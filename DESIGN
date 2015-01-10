@@ -1,0 +1,16 @@
+Game: StickyBox
+
+StickyBox is a 2D puzzle game developed using JavaFX. The user controls a box that can only move in any of the North, South, East, West directions but with one catch: the box cannot change its path once it starts moving. The box will continue to move until it collides into an obstacle, upon which the user can move the box in a different direction. The user can continue to move the box as such, allowing it to hit obstacle after obstacle until it reaches the final exit. 
+
+The user must lead a box from a start point to an exit through 2 different modes: easy and hard. In easy mode, the goal is simply to reach the exit by sticking to obstacles and changing directions. There is usually one (although possibly a few) unique solution to each level of the puzzle. In hard mode, prior to arrival at the exit, the box must also collect several items by passing through them.
+
+The user can control the box using the left, right, up, and down arrow keys. Pressing 'r' will reset the level while pressing 'h' will show a solution to the game by changing the color of the obstacles and revealing a potential solution of the order that they should be travelled to in. 
+
+
+
+
+
+
+
+
+
