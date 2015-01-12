@@ -11,57 +11,52 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
-public class Menu {
-
+//You Won! Play Again? button
+public class EndScreen {
+	
 	private Group myRoot;
-    private ItemBoxWorld myGame;
-    public Scene myScene;
+    private Scene myScene;
+    private Menu myMenu;
 
     private static final int NUM_FRAMES_PER_SECOND = 60;
 
     public Scene init (Stage s, int width, int height) {
     	  myRoot = new Group();
           
-    	  addIntroText();
-    	  Button play = new Button("Play");
+          Text closer = new Text(100,300,"You Won!");
+      	  closer.setFont(new Font(100));
+      	  closer.setFill(Color.WHITE);
+      	  
+    	  Button play = new Button("Play Again?");
     	  play.setTranslateX(330); 
     	  play.setTranslateY(430);
     	  
     	  play.setOnAction(new EventHandler<ActionEvent>() {
     		  public void handle(ActionEvent e){
-	    		  myGame = new ItemBoxWorld();
+	    		  myMenu = new Menu();
 	    		  // attach game to the stage and display it
-	    		  Scene scene = myGame.init(s, width, height);
+	    		  Scene scene = myMenu.init(s, width, height);
 	    		  s.setScene(scene);
 	    		  s.show();
 		
 	    		  // setup the game's loop
-	    		  KeyFrame frame = myGame.start(NUM_FRAMES_PER_SECOND);
+	    		  KeyFrame frame = myMenu.start(NUM_FRAMES_PER_SECOND);
 	    		  Timeline animation = new Timeline();
 	    		  animation.setCycleCount(Animation.INDEFINITE);
 	    		  animation.getKeyFrames().add(frame);
 	    		  animation.play();
     		  }
     	  }); 
-          myRoot.getChildren().add(play);
+    	  
+    	  
+          myRoot.getChildren().add(closer);
+    	  myRoot.getChildren().add(play);
           
           myScene = new Scene(myRoot, width, height, Color.BLACK);
           return myScene;
     }
     
-    public void addIntroText(){
-      Text opener = new Text(100,300,"Sticky Box");
-  	  opener.setFont(new Font(100));
-  	  opener.setFill(Color.WHITE);
-  	  Text instructions = new Text(170,350,"Guide sticky box to the white exit. "
-  	  		+ "Sticky box can only move in a straight line but can stick to obstacles. "
-  	  		+ "Use the arrow keys to move. Press 'r' to restart the level and 'h' for a hint.");
-  	  instructions.setTextAlignment(TextAlignment.CENTER);
-  	  instructions.setWrappingWidth(400);
-  	  instructions.setFill(Color.WHITE);
-  	  
-  	  myRoot.getChildren().add(opener);
-	  myRoot.getChildren().add(instructions);
-    }
+    
 }
