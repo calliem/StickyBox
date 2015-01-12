@@ -15,8 +15,8 @@ import javafx.stage.Stage;
 public class ItemBoxWorld extends BoxWorld {
 	
 	private int itemCounter;
-	private Item myItem1;
-	private Item myItem2;
+	private ImageView myItem1;
+	private ImageView myItem2;
 	private Stage myStage;
 	
 	private static final int NUM_OF_ITEMS = 2;
@@ -38,45 +38,49 @@ public class ItemBoxWorld extends BoxWorld {
       	System.out.println(itemCounter);
 
       	addStarterObjects();
-      	addItems(); //itemXcoordinates, itemYcoordinates as parameters LILA 
+      	addAllItems(); //itemXcoordinates, itemYcoordinates as parameters LILA 
         return createScene(width, height);
     }
     
-    private void addItems(){
+    private void addAllItems(){
       	itemCounter = NUM_OF_ITEMS;
       	
       	Rectangle rect = new Rectangle(0,0);
-     // 	System.out.println(itemExists(rect));
-      	//wtf why ^^^^^
-      	
-      	
-      	//doesn't waste time/memory by creating new objects if they already exist. also ensures that there are not multiple versions of the same item.
-      	
-      	//getimageview or just leave as a rectangle object? they're different. pay attention!!
-      	if (!itemExists(myItem1.getImageView())){
-      		myItem1 = new Item(280,320,OBSTACLE_SIZE, OBSTACLE_SIZE); 
-      		myRoot.getChildren().add(myItem1.getImageView());
+ 
+      	if (!itemExists(myItem1)){
+      		addSingleItem(myItem1,280,320);
+      		
       	}
-    	if (!itemExists(myItem2.getImageView())){
-    		myItem2 = new Item(480,300,OBSTACLE_SIZE, OBSTACLE_SIZE);
-    		myRoot.getChildren().add(myItem2.getImageView());
+    	if (!itemExists(myItem2)){
+    		addSingleItem(myItem2,480,300);
     	}
+    }
+    
+    private void addSingleItem(ImageView item, int xCoord, int yCoord){
+    	item = new ImageView(new Image(getClass().getResourceAsStream("images/coin.png")));
+		item.setX(xCoord); //make this into an item
+		item.setY(yCoord);
+        item.setFitWidth(OBSTACLE_SIZE);
+        myRoot.getChildren().add(item);
+    	
     }
 
 	protected boolean checkAllCollisions(){
 		System.out.println(itemCounter);
-		if (checkCollide(myItem1)){
+		/*if (checkCollide(myItem1)){
 			System.out.println("collide item 1 first if statement");
 			System.out.println(itemExists(myItem1));
-		}
-    	if (checkCollide(myItem1) && itemExists(myItem1.getImageView())){
-    		myRoot.getChildren().remove(myItem1.getImageView());
+		}*/
+		System.out.println("itemExists" + itemExists(myItem1));
+		//System.out.println("checkCollide" + checkCollide(myItem1));
+    	if (itemExists(myItem1) && checkCollide(myItem1)){
+    		myRoot.getChildren().remove(myItem1);
     		itemCounter--;
     		System.out.println("collide item 1 second if statement");
     		//most likely it goes through a box and gets stuck
     	}
-    	if (checkCollide(myItem2) && itemExists(myItem2.getImageView())){
-    		myRoot.getChildren().remove(myItem2.getImageView());
+    	if (itemExists(myItem2) && checkCollide(myItem2)){
+    		myRoot.getChildren().remove(myItem2);
     		itemCounter --;
     	}
     	return super.checkAllCollisions();
@@ -84,6 +88,7 @@ public class ItemBoxWorld extends BoxWorld {
 	
 	private boolean itemExists(Node item){
 		System.out.println("check starts");
+		
 		
 		for (Node node: myRoot.getChildren()){
 			System.out.println("node " + node);
@@ -123,7 +128,7 @@ public class ItemBoxWorld extends BoxWorld {
 	 
 	 protected void reset(){
 		 super.reset();
-		 addItems(); //might add too many items if i didn't collect all the items first
+		 addAllItems(); //might add too many items if i didn't collect all the items first
 		 
 	 }
 }

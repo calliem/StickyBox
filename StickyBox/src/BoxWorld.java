@@ -39,8 +39,9 @@ class BoxWorld {
     private Scene myScene;
     protected Group myRoot; 
     protected StickyBox myPlayer;
-    private Rectangle[] obstacleArray;
-    private Rectangle myExit;
+ //   private Rectangle[] obstacleArray;
+    private ImageView[] obstacleArray;
+    private ImageView myExit;
     protected int[] obstacleXCoordinates;
     protected int[] obstacleYCoordinates; 
     private ItemBoxWorld myNextLevel;
@@ -104,12 +105,18 @@ class BoxWorld {
         System.out.println("player created");
 
         //create the obstacles
-        obstacleArray = new Rectangle[obstacleXCoordinates.length];
+        obstacleArray = new ImageView[obstacleXCoordinates.length];
         createObstacleArray(obstacleXCoordinates, obstacleYCoordinates);
 
         //create the final exit
-        myExit = new Rectangle(EXIT_COORDINATES,EXIT_COORDINATES,OBSTACLE_SIZE,OBSTACLE_SIZE);
-        myExit.setFill(Color.WHITE); //set the exit spot to a special color
+        //myExit = new Rectangle(EXIT_COORDINATES,EXIT_COORDINATES,OBSTACLE_SIZE,OBSTACLE_SIZE);
+        myExit = new ImageView(new Image(getClass().getResourceAsStream("images/finish.png")));
+        myExit.setFitWidth(OBSTACLE_SIZE);
+        myExit.setFitHeight(OBSTACLE_SIZE);
+        myExit.setX(EXIT_COORDINATES);
+        myExit.setY(EXIT_COORDINATES);
+        
+        //myExit.setFill(Color.WHITE); //set the exit spot to a special color
     	Text finish = new Text(EXIT_COORDINATES+8,EXIT_COORDINATES+25,"EXIT");
         myRoot.getChildren().add(myExit);
         myRoot.getChildren().add(finish);
@@ -119,8 +126,14 @@ class BoxWorld {
     //use the given rectangle coordinates to create an array of obstacles (Rectangle objects)  
     public void createObstacleArray(int[] xCoord, int[] yCoord){ 
     	for (int i = 0; i < xCoord.length; i++){
-    		obstacleArray[i] = new Rectangle(xCoord[i],yCoord[i],OBSTACLE_SIZE,OBSTACLE_SIZE);
-     		obstacleArray[i].setFill(Color.GREY);
+    		//obstacleArray[i] = new Rectangle(xCoord[i],yCoord[i],OBSTACLE_SIZE,OBSTACLE_SIZE);
+    		obstacleArray[i] = new ImageView(new Image(getClass().getResourceAsStream("images/rock.png")));
+    		obstacleArray[i].setX(xCoord[i]); //make this into an item
+    		obstacleArray[i].setY(yCoord[i]);
+            obstacleArray[i].setFitWidth(OBSTACLE_SIZE);
+
+
+     		//obstacleArray[i].setFill(Color.GREY);
 	        myRoot.getChildren().add(obstacleArray[i]);   		
 	    }	   
     }    
@@ -213,7 +226,7 @@ class BoxWorld {
      */
  
     //want to make rectangle Node but cannot because javafx not robust enough
-    protected boolean checkCollide(Rectangle obstacle){  
+    protected boolean checkCollide(ImageView obstacle){  
     	if (myPlayer.getXDirection() == RIGHT && myPlayer.getYDirection() == 0 
     			&& myPlayer.getTranslateX() + OBSTACLE_SIZE == obstacle.getX()
     			&& myPlayer.getTranslateY() == obstacle.getY())
@@ -288,7 +301,9 @@ class BoxWorld {
         }
         else if (keyCode == KeyCode.H){ 
         	for (int i = 0; i < NUM_REAL_OBSTACLES; i ++){
-	        	obstacleArray[i].setFill(Color.ORANGE);
+	        	obstacleArray[i].setImage(new Image(getClass().getResourceAsStream("images/star.png")));
+	            obstacleArray[i].setFitHeight(OBSTACLE_SIZE);
+
         	}
         }
     }
@@ -315,7 +330,8 @@ class BoxWorld {
     	KeyCode keyCode = e.getCode();
     	if (keyCode == KeyCode.H){
     		for (int i = 0; i < NUM_REAL_OBSTACLES; i ++){
-	        	obstacleArray[i].setFill(Color.GREY);
+	        	obstacleArray[i].setImage(new Image(getClass().getResourceAsStream("images/rock.png")));
+	            obstacleArray[i].setFitWidth(OBSTACLE_SIZE);
 
 	    	}
 	    }
