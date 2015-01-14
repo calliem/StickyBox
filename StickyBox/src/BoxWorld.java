@@ -122,6 +122,7 @@ class BoxWorld {
      * Note, there are more sophisticated ways to animate shapes, but these simple ways work too.
      */
     public void updateSprites() {
+    	
     	if (checkAllCollisions() && !myPlayer.isStuck()){
     		myPlayer.setStuck(true);
     		myPlayer.setPreviousDirection(myPlayer.getXDirection(),myPlayer.getYDirection());
@@ -132,13 +133,22 @@ class BoxWorld {
     	}
     	myPlayer.move();
     }
+    
+    public boolean onScreen(){
+    	return myPlayer.getTranslateX() <= myStage.getWidth() && myPlayer.getTranslateY() <= myStage.getHeight() 
+    			&& myPlayer.getTranslateX() >= 0 && myPlayer.getTranslateY() >= 0;
+    }
      
     protected boolean checkAllCollisions(){
 	    boolean hasCollided = true;
+	    if (!onScreen()){
+    		//loseGame();
+    		//myStage.close();
+	    	winLevel();
+    	}
 	    //check if the exit has been reached 
 	    if (checkCollide(myExit)){
 	    	//you won the game screen; LILA
-	    	System.out.println("you won!");
 	    	winLevel();
 	    }
 	    
@@ -167,7 +177,15 @@ class BoxWorld {
 	  animation.setCycleCount(Animation.INDEFINITE);
 	  animation.getKeyFrames().add(frame);
 	  animation.play();
-      System.out.println("you won!");
+    }
+    
+    private void loseGame(){
+    	  LoseScreen lose = new LoseScreen();
+    	  Scene scene = lose.init(myStage, myWidth, myHeight);
+    	  myStage.setScene(scene);
+    	  myStage.show();
+    //	  animation.getKeyFrames().remove(frame);
+    	  //stop keyframe
     }
     
     /**
@@ -177,6 +195,7 @@ class BoxWorld {
      */
     
     protected boolean checkCollide(ImageView obstacle){  
+    	
     	if (myPlayer.getXDirection() == RIGHT && myPlayer.getYDirection() == 0 
     			&& myPlayer.getTranslateX() + OBSTACLE_SIZE == obstacle.getX()
     			&& myPlayer.getTranslateY() == obstacle.getY())
