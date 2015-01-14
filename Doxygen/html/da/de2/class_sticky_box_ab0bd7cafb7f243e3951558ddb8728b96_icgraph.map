@@ -1,0 +1,18 @@
+<map id="StickyBox.getXPrev" name="StickyBox.getXPrev">
+<area shape="rect" id="node2" href="$db/d97/class_box_world.html#adc4c9d78ffde3d052c4c92047eb98e55" title="BoxWorld.allowMovement" alt="" coords="201,81,383,108"/>
+<area shape="rect" id="node3" href="$db/d97/class_box_world.html#aa7e2049d7be23e15fd2ec7fa2922ed79" title="BoxWorld.handleKeyInput" alt="" coords="432,81,613,108"/>
+<area shape="rect" id="node4" href="$db/d97/class_box_world.html#a726e747e023543658d7a345cc6466ccb" title="BoxWorld.createScene" alt="" coords="661,56,827,83"/>
+<area shape="rect" id="node5" href="$d6/d4f/class_item_box_world.html#aa559fc2680327b41fb376e2eda8e82e3" title="ItemBoxWorld.init" alt="" coords="875,56,1007,83"/>
+<area shape="rect" id="node10" href="$db/d97/class_box_world.html#a55bf92d3f466bfaade0f6d199d8c9bd9" title="BoxWorld.init" alt="" coords="1873,56,1975,83"/>
+<area shape="rect" id="node6" href="$db/d97/class_box_world.html#aad670712776afe126e51791097027e05" title="BoxWorld.winLevel" alt="" coords="1057,107,1194,133"/>
+<area shape="rect" id="node7" href="$db/d97/class_box_world.html#a4079bed8937c9f621decfbe1309e31e2" title="BoxWorld.checkAllCollisions" alt="" coords="1243,107,1437,133"/>
+<area shape="rect" id="node8" href="$db/d97/class_box_world.html#a6794c083c2a0263c2f585f4ae4b7e39c" title="BoxWorld.updateSprites" alt="" coords="1486,107,1661,133"/>
+<area shape="rect" id="node9" href="$db/d97/class_box_world.html#ad20a4e43406c44f4bbf201d1d1028998" title="BoxWorld.start" alt="" coords="1709,56,1824,83"/>
+<area shape="rect" id="node11" href="$d2/db8/class_menu.html#a3c99ad09e9f2f975c1a0d0597642651a" title="Menu.init" alt="" coords="2024,56,2104,83"/>
+<area shape="rect" id="node12" href="$d4/d2f/class_lose_screen.html#a34f2cc2c803500316c9b8d854854d758" title="LoseScreen.init" alt="" coords="2152,107,2272,133"/>
+<area shape="rect" id="node15" href="$d1/de1/class_end_screen.html#a1264ffb72b3a3032443f9c4087222aef" title="EndScreen.init" alt="" coords="2155,56,2269,83"/>
+<area shape="rect" id="node17" href="$d0/d4b/class_main.html#a7595d13c514a02c35aca322dd91d2063" title="Main.start" alt="" coords="2169,5,2255,32"/>
+<area shape="rect" id="node13" href="$d6/d4f/class_item_box_world.html#a295cf7212ad54fa599e2a2d85ee0523d" title="ItemBoxWorld.loseGame" alt="" coords="2320,107,2499,133"/>
+<area shape="rect" id="node14" href="$db/d97/class_box_world.html#a72bacb2a6757900d8835249929fcc838" title="BoxWorld.loseGame" alt="" coords="2335,157,2484,184"/>
+<area shape="rect" id="node16" href="$d6/d4f/class_item_box_world.html#a2ed12a6b39993faedc05cc682204476d" title="ItemBoxWorld.winLevel" alt="" coords="2326,56,2493,83"/>
+</map>

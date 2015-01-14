@@ -1,0 +1,5 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$db/d97/class_box_world.html" title="BoxWorld" alt="" coords="317,188,396,215"/>
+<area shape="rect" id="node6" href="$d6/d4f/class_item_box_world.html" title="ItemBoxWorld" alt="" coords="139,280,248,307"/>
+<area shape="rect" id="node9" href="$da/de2/class_sticky_box.html" title="StickyBox" alt="" coords="313,83,396,109"/>
+</map>

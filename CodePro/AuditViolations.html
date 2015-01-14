@@ -1,0 +1,5745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>CodePro Code Audit for codepro.audit</title>
+
+	<meta name="GENERATOR" content="CodePro Server"/>
+
+	<style type="text/css">
+	.highSeverity { background-color: #ff9999; }
+	.mediumSeverity { }
+	.lowSeverity { }
+	</style>
+
+	<style type="text/css">
+	body {font: 70% verdana,arial,helvetica; color: #000000}
+p  {margin-top:  3px; line-height: 1.5em}
+h1 {margin-top:  0px; margin-bottom: 6px; font: bold 150% verdana,arial,helvetica}
+h2 {margin-top: 12px; margin-bottom: 6px; font: bold 125% verdana,arial,helvetica}
+h3 {margin-top: 12px; margin-bottom: 6px; font: bold 100% verdana,arial,helvetica}
+h4 {margin-top: 12px; margin-bottom: 6px; font: bold 100% verdana,arial,helvetica}
+.rounded_page{display:block}
+.rounded_page *{display:block; height:1px; overflow:hidden; font-size:.01em; background:#7799DD}
+.rounded_page1{ margin-left:3px; margin-right:3px; padding-left:1px; padding-right:1px; border-left:1px solid #c4d3ef; border-right:1px solid #c4d3ef; background:#99b2e5}
+.rounded_page2{ margin-left:1px; margin-right:1px; padding-right:1px; padding-left:1px; border-left:1px solid #f1f4fa; border-right:1px solid #f1f4fa; background:#90ace3}
+.rounded_page3{ margin-left:1px; margin-right:1px; border-left:1px solid #90ace3; border-right:1px solid #90ace3;}
+.rounded_page4{ border-left:1px solid #c4d3ef; border-right:1px solid #c4d3ef}
+.rounded_page5{ border-left:1px solid #99b2e5; border-right:1px solid #99b2e5}
+.rounded_pagefg{ background:#7799DD}
+.rounded_section{display:block}
+.rounded_section *{display:block; height:1px; overflow:hidden; font-size:.01em; background:#C3D9FF}
+.rounded_section1{ margin-left:3px; margin-right:3px; padding-left:1px; padding-right:1px; border-left:1px solid #e5eefe; border-right:1px solid #e5eefe; background:#d2e2fe}
+.rounded_section2{ margin-left:1px; margin-right:1px; padding-right:1px; padding-left:1px; border-left:1px solid #f9fbfe; border-right:1px solid #f9fbfe; background:#cee0fe}
+.rounded_section3{ margin-left:1px; margin-right:1px; border-left:1px solid #cee0fe; border-right:1px solid #cee0fe;}
+.rounded_section4{ border-left:1px solid #e5eefe; border-right:1px solid #e5eefe}
+.rounded_section5{ border-left:1px solid #d2e2fe; border-right:1px solid #d2e2fe}
+.rounded_sectionfg{ background:#C3D9FF}
+.page-title { color: #FFFFFE; font-weight: bold; font-size: large; margin: 0px 0px 0px 8px; }
+.page-title-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.page-footer { color: #FFFFFE; font-weight: bold; margin-left: 8px}
+.page-footer-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.majorsection-title { color: #FFFFFE; font-weight: bold; margin: 0px 0px 0px 8px; }
+.majorsection-title-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.majorsection-contents { margin: 0px 0px 15px 16px; }
+.section-title { color: #1F4F8F; font-weight: bold; margin: 0px 0px 0px 6px; }
+.section-title-details { font-weight: bold; margin-left: 6px; margin-right: 6px; }
+.section-contents { margin: 6px 0px 15px 14px; }
+.bodyTable { border: 0px solid #777777; width:100%; border-collapse: collapse; }
+.bodyTable th { border: 1px solid #777777; white-space:nowrap; background-color: #EEEEEE; padding-left: 3px; padding-right: 3px; }
+.bodyTable td { border: 1px solid #777777; vertical-align: top; padding-left: 3px; padding-right: 3px; }
+td[class=emptyborder] { border: 0px solid #777777; padding: 3px 0px 3px 0px; }
+
+	</style>
+
+</head>
+
+<body>
+
+<div>
+		<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+		<div class="rounded_pagefg">
+			<h2 class="page-title"><a name="top">CodePro Code Audit for codepro.audit</a></h2>
+		</div>
+		<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+	</div>
+	<div class="majorsection-contents">
+		<p>This document contains the results of auditing codepro.audit at 1/14/15 11:42 PM, using the audit rule set CS 308.</p>
+	</div>
+	<table width="100%" border="0">
+		<tr>
+			<td valign="top" width="68%">
+				<div>
+					<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+					<div class="rounded_pagefg">
+						<h3 class="majorsection-title">Violations by Severity</h3>
+					</div>
+					<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+				</div>
+				<div class="section-contents">
+					<table>
+					<tr>
+					<td valign="top"><a href="#High">High</a>
+					</td></tr>
+					<tr>
+					<td valign="top"><a href="#Medium">Medium</a>
+					</td></tr>
+					<tr>
+					<td valign="top"><a href="#Low">Low</a>
+					</td></tr>
+					</table>
+				</div>
+			</td>
+			<td width="2%">
+				 </td>
+			<td valign="top" width="30%">
+				<div>
+					<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+					<div class="rounded_pagefg">
+						<h3 class="majorsection-title">Violation Counts by Severity</h3>
+					</div>
+					<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+				</div>
+				<div class="section-contents">
+					<table class="bodyTable">
+						<tr><th>Violation Severity</th><th>Violation Count</th></tr>
+						<tr class="a"><td>High</td><td align="right">100</td></tr>
+						<tr class="b"><td>Medium</td><td align="right">46</td></tr>
+						<tr class="a"><td>Low</td><td align="right">449</td></tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="section-contents">
+		<table class="bodyTable">
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="High">High (100)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Numeric_Literals">Numeric Literals (81)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 160</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 360</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 160</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 320</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 120</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line28">Invalid numeric literal: 140</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line28">Invalid numeric literal: 300</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line29">Invalid numeric literal: 100</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line33">Invalid numeric literal: 295</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line34">Invalid numeric literal: 400</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 120</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 320</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 360</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line53">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line53">Invalid numeric literal: 320</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line56">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line56">Invalid numeric literal: 300</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line105">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+105</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line106">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+106</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid numeric literal: 140</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid numeric literal: 300</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line28">Invalid numeric literal: 100</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line32">Invalid numeric literal: 295</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line33">Invalid numeric literal: 400</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Main.html#line26">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Main.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Main.html#line26">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Main.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line28">Invalid numeric literal: 330</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line29">Invalid numeric literal: 430</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line47">Invalid numeric literal: 100</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line47">Invalid numeric literal: 300</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line48">Invalid numeric literal: 100</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+48</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line50">Invalid numeric literal: 170</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line50">Invalid numeric literal: 350</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line54">Invalid numeric literal: 400</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+54</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="String_Literals">String Literals (19)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line91">Invalid string literal: &quot;images/finish.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+91</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line102">Invalid string literal: &quot;images/rock.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+102</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line148">Invalid string literal: &quot;checkend&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+148</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line248">Invalid string literal: &quot;images/star.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+248</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line276">Invalid string literal: &quot;images/rock.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+276</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line28">Invalid string literal: &quot;You Won!&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line32">Invalid string literal: &quot;Play Again?&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line50">Invalid string literal: &quot;222&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line61">Invalid string literal: &quot;images/coin.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+61</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line95">Invalid string literal: &quot;end game&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+95</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line104">Invalid string literal: &quot;You must collect all items first before you can exit!&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+104</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid string literal: &quot;You Lost :(&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line31">Invalid string literal: &quot;Play Again?&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Main.html#line23">Invalid string literal: &quot;BoxWorld&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Main.java</td>
+<td>
+23</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line27">Invalid string literal: &quot;Play&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line47">Invalid string literal: &quot;Sticky Box&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line50">Invalid string literal: &quot;Guide sticky box to the white exit. &quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line51">Invalid string literal: &quot;Sticky box can only move in a straight line but can stick to obstacles. &quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line52">Invalid string literal: &quot;Use the arrow keys to move. Press 'r' to restart the level and 'h' for a hint.&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+52</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Medium">Medium (46)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Cyclomatic_Complexity">Cyclomatic Complexity (2)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line201">Method is too complex (cyclomatic complexity = 16)</a></td>
+<td>
+Reduce the complexity of the method by extracting some of the code into a separate method.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+201</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line226">Method is too complex (cyclomatic complexity = 12)</a></td>
+<td>
+Reduce the complexity of the method by extracting some of the code into a separate method.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+226</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Dangling_Else">Dangling Else (9)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line207">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+207</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line211">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+211</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line215">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+215</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line219">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+219</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line268">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+268</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line63">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line65">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+65</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line67">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+67</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line69">Dangling else clause</a></td>
+<td>
+Enclose the then clause in a block.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+69</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Instance_Field_Visibility">Instance Field Visibility (15)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line30">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line31">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line32">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line33">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line36">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line42">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/Menu.html#line19">Invalid visibility for field: public</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+Menu.java</td>
+<td>
+19</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line7">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+7</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line8">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+8</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line9">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+9</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line10">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+10</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line11">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+11</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line12">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+12</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Large_Number_of_Fields">Large Number of Fields (1)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line19">Too many fields: 12</a></td>
+<td>
+Reduce the number of fields by splitting the class into multiple smaller classes.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+19</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Large_Number_of_Parameters">Large Number of Parameters (1)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line14">Too many parameters: 8</a></td>
+<td>
+Reduce the number of parameters by moving some of the values into a separate class.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+14</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Missing_Block">Missing Block (13)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line206">Missing block in if clause: return true;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+206</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line210">Missing block in if clause: return true;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+210</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line214">Missing block in if clause: return true;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+214</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line218">Missing block in if clause: return true;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+218</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line220">Missing block in else clause: return false;</a></td>
+<td>
+Add a block around the body of the else clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+220</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line265">Missing block in if clause: return myPlayer.getYDirection() == 0 &amp;&amp; myPlayer.getXDirection() == 0 &amp;&amp; myPlayer.getYPrev() != y;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+265</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line267">Missing block in if clause: return myPlayer.getYDirection() == 0 &amp;&amp; myPlayer.getXDirection() == 0 &amp;&amp; myPlayer.getXPrev() != x;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+267</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line269">Missing block in else clause: return false;</a></td>
+<td>
+Add a block around the body of the else clause.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+269</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line62">Missing block in if clause: return;</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line64">Missing block in if clause: this.setTranslateY(this.getTranslateY() - mySpeed);</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line66">Missing block in if clause: this.setTranslateY(this.getTranslateY() + mySpeed);</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+66</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line68">Missing block in if clause: this.setTranslateX(this.getTranslateX() + mySpeed);</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+68</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line70">Missing block in if clause: this.setTranslateX(this.getTranslateX() - mySpeed);</a></td>
+<td>
+Add a block around the body of the if clause.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+70</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Type_Javadoc_Conventions">Type Javadoc Conventions (5)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line17">Missing Javadoc comment for type EndScreen</a></td>
+<td>
+Run the Javadoc Repair tool on this type to add missing type Javadoc.		</td>
+<td>Medium</td>
+<td>
+EndScreen.java</td>
+<td>
+17</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line16">Missing Javadoc comment for type ItemBoxWorld</a></td>
+<td>
+Run the Javadoc Repair tool on this type to add missing type Javadoc.		</td>
+<td>Medium</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+16</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line16">Missing Javadoc comment for type LoseScreen</a></td>
+<td>
+Run the Javadoc Repair tool on this type to add missing type Javadoc.		</td>
+<td>Medium</td>
+<td>
+LoseScreen.java</td>
+<td>
+16</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/Menu.html#line15">Missing Javadoc comment for type Menu</a></td>
+<td>
+Run the Javadoc Repair tool on this type to add missing type Javadoc.		</td>
+<td>Medium</td>
+<td>
+Menu.java</td>
+<td>
+15</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line6">Missing Javadoc comment for type StickyBox</a></td>
+<td>
+Run the Javadoc Repair tool on this type to add missing type Javadoc.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+6</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Low">Low (449)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Indent_Code_Within_Blocks">Indent Code Within Blocks (46)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line139">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+139</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line169">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+169</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line170">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+170</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line171">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+171</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line172">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+172</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line174">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+174</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line175">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+175</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line176">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+176</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line177">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+177</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line178">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+178</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line179">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+179</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line204">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+204</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line205">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+205</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line206">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+206</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line208">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+208</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line209">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+209</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line210">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+210</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line212">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+212</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line213">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+213</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line214">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+214</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line216">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+216</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line217">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+217</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line218">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+218</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line220">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+220</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line265">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+265</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line267">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+267</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line269">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+269</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line29">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line30">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line56">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line57">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line124">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+124</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line28">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line29">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line51">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line52">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line47">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line51">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line52">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line58">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line15">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+15</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line62">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line64">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line66">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+66</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line68">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+68</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line70">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+70</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Line_Length">Line Length (9)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line57">Line 57 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line58">Line 58 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line102">Line 102 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+102</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line138">Line 138 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+138</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line248">Line 248 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+248</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line265">Line 265 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+265</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line267">Line 267 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+267</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line276">Line 276 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+276</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line61">Line 61 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+61</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="White_Space_Usage">White Space Usage (394)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line20">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+20</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line24">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+24</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line25">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+25</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line26">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line27">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line53">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line54">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+54</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line55">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+55</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line56">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line57">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line58">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line60">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+60</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line61">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+61</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line62">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line63">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line64">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line65">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+65</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line66">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+66</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line67">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+67</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line68">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+68</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line69">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+69</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line73">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+73</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line101">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+101</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line102">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+102</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line103">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+103</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line104">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+104</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line106">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+106</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line106">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+106</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line107">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+107</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line107">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+107</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line125">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+125</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line126">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+126</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line127">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+127</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line128">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+128</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line129">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+129</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line130">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+130</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line131">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+131</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line132">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+132</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line133">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+133</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line134">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+134</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line138">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+138</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line139">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+139</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line143">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+143</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line144">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+144</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line145">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+145</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line146">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+146</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line147">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+147</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line148">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+148</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line149">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+149</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line150">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+150</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line151">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+151</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line151">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+151</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line152">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+152</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line153">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+153</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line154">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+154</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line155">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+155</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line156">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+156</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line156">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+156</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line157">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+157</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line157">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+157</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line158">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+158</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line158">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+158</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line159">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+159</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line159">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+159</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line160">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+160</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line160">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+160</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line161">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+161</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line161">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+161</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line162">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+162</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line162">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+162</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line163">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+163</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line164">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+164</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line168">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+168</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line170">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+170</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line171">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+171</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line172">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+172</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line174">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+174</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line175">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+175</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line184">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+184</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line186">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+186</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line187">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+187</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line188">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+188</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line189">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+189</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line190">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+190</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line191">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+191</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line202">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+202</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line203">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+203</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line204">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+204</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line205">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+205</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line206">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+206</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line207">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+207</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line208">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+208</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line209">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+209</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line210">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+210</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line211">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+211</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line212">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+212</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line213">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+213</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line214">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+214</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line215">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+215</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line216">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+216</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line217">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+217</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line218">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+218</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line219">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+219</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line220">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+220</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line229">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+229</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line232">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+232</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line235">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+235</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line238">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+238</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line241">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+241</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line244">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+244</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line247">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+247</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line248">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+248</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line248">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+248</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line249">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+249</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line250">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+250</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line255">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+255</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line256">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+256</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line257">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+257</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line258">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+258</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line264">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+264</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line265">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+265</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line266">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+266</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line267">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+267</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line268">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+268</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line269">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+269</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line273">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+273</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line274">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+274</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line275">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+275</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line276">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+276</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line276">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+276</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line277">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+277</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line278">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+278</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line278">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+278</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line279">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+279</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line18">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+18</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line19">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+19</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line26">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line29">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line30">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line31">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line32">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line35">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+35</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line41">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line41">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line42">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line42">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line43">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line44">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line44">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line45">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+45</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line45">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+45</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line46">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+46</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line47">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line48">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+48</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line50">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+EndScreen.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line17">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+17</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line18">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+18</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line19">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+19</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line20">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+20</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line21">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+21</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line22">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+22</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line23">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+23</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line24">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+24</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line25">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+25</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line28">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line29">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line30">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line31">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line32">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line50">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line51">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line52">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line53">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line53">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line54">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+54</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line55">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+55</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line56">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line57">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line61">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+61</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line62">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line63">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line67">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+67</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line70">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+70</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line71">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+71</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line72">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+72</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line73">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+73</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line74">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+74</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line75">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+75</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line76">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+76</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line77">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+77</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line78">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+78</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line79">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+79</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line80">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+80</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line82">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+82</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line83">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+83</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line84">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+84</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line85">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+85</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line86">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+86</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line87">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+87</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line88">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+88</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line89">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+89</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line90">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+90</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line91">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+91</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line92">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+92</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line93">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+93</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line94">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+94</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line95">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+95</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line96">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+96</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line97">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+97</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line98">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+98</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line99">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+99</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line100">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+100</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line100">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+100</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line101">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+101</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line102">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+102</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line103">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+103</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line104">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+104</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line105">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+105</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line106">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+106</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line107">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+107</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line107">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+107</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line108">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+108</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line108">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+108</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line109">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+109</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line110">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+110</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line110">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+110</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line111">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+111</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line112">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+112</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line113">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+113</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line114">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+114</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line115">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+115</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line117">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+117</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line118">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+118</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line119">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+119</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line120">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+120</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line121">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+121</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line122">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+122</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line125">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+125</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line126">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+126</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line127">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+127</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line128">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+128</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line129">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+129</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line130">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+130</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line17">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+17</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line18">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+18</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line25">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+25</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line28">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line29">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line30">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line31">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line32">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line35">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+35</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line40">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line40">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line41">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line42">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line43">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line45">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+LoseScreen.java</td>
+<td>
+45</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line17">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+17</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line24">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+24</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line26">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line27">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line28">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line29">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+29</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line30">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line31">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line32">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line35">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+35</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line35">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+35</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line37">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line37">Use of tab character outside a literal</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line48">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+48</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line49">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+49</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line50">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line51">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line51">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line52">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line52">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line53">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line54">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+54</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line55">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+55</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line56">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line57">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line58">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line7">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+7</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line8">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+8</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line9">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+9</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line10">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+10</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line11">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+11</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line12">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+12</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line13">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+13</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line14">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+14</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line15">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+15</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line16">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+16</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line17">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+17</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line18">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+18</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line19">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+19</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line20">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+20</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line21">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+21</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line22">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+22</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line23">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+23</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line24">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+24</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line26">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+26</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line27">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line28">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line30">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+30</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line31">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line32">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line33">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line34">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line35">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+35</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line36">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line37">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line38">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line39">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line40">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line41">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line42">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line43">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line44">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line45">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+45</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line46">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+46</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line47">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+47</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line48">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+48</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line49">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+49</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line50">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+50</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line51">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+51</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line52">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+52</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line53">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+53</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line54">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+54</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line55">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+55</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line56">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line57">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+57</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line58">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+58</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line59">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+59</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line60">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+60</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line61">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+61</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line62">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line63">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line64">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line65">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+65</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line66">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+66</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line67">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+67</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line68">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+68</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line69">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+69</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line70">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+70</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line71">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+71</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line72">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+72</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line73">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+73</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line74">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+74</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line75">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+75</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line76">Use of tab character after start of line</a></td>
+<td>
+Use spaces rather than tabs.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+76</td>
+</tr>
+		</table>
+	</div>
+	<div>
+		<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+		<div class="rounded_pagefg">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" ><tr><td valign="middle">
+			<span class="page-footer">Generated at 1/14/15 11:42 PM</span>
+			</td><td align="right" valign="middle">
+			<span class="page-footer-details">Powered by <span title="0.0.0, UNKNOWN">CodePro Server</span></span></td></tr></table>
+		</div>
+		<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+	</div>
+
+</body>
+
+</html>

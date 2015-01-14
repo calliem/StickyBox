@@ -1,0 +1,4 @@
+<map id="BoxWorld.reset" name="BoxWorld.reset">
+<area shape="rect" id="node2" href="$da/de2/class_sticky_box.html#aa1bb8f78f676b01c688d75d386758444" title="StickyBox.setDirection" alt="" coords="197,5,363,32"/>
+<area shape="rect" id="node3" href="$da/de2/class_sticky_box.html#a5d95d2ed2e13f0d87a44311db77f9e36" title="StickyBox.setPreviousDirection" alt="" coords="171,56,389,83"/>
+</map>
