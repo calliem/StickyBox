@@ -34,14 +34,7 @@ public class Menu {
 	    		  // attach game to the stage and display it
 	    		  Scene scene = myGame.init(s, width, height);
 	    		  s.setScene(scene);
-	    		  s.show();
-		
-	    		  // setup the game's loop
-	    		  KeyFrame frame = myGame.start(NUM_FRAMES_PER_SECOND);
-	    		  Timeline animation = new Timeline();
-	    		  animation.setCycleCount(Animation.INDEFINITE);
-	    		  animation.getKeyFrames().add(frame);
-	    		  animation.play();
+	    		  s.show();	    		
     		  }
     	  }); 
           myRoot.getChildren().add(play);

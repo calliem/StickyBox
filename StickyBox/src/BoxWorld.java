@@ -1,21 +1,13 @@
-import java.util.Arrays;
-
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.geometry.Point2D;
 import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -41,6 +33,7 @@ class BoxWorld {
     protected int[] obstacleYCoordinates; 
     private ImageView[] obstacleArray;
     private ImageView myExit;
+    protected Timeline myAnimation;
     
     private ItemBoxWorld myNextLevel;
     protected Stage myStage;
@@ -57,6 +50,7 @@ class BoxWorld {
      * Create the game's scene
      */
     public Scene init (Stage s, int width, int height) {
+		  
       	myStage = s;
     	myWidth = width;
     	myHeight = height;
@@ -65,6 +59,13 @@ class BoxWorld {
 
     	myRoot = new Group();
     	addStarterObjects();
+    	
+    	 KeyFrame frame = start(NUM_FRAMES_PER_SECOND);
+		 myAnimation = new Timeline();
+		 myAnimation.setCycleCount(Animation.INDEFINITE);
+		 myAnimation.getKeyFrames().add(frame);
+		 myAnimation.play();
+		 
     	return createScene(width, height);  
     }
     
@@ -81,7 +82,6 @@ class BoxWorld {
         myPlayer = new StickyBox(0,0,OBSTACLE_SIZE,OBSTACLE_SIZE, PLAYER_SPEED,0,0, false);
         myPlayer.setFill(Color.WHITE);        
         myRoot.getChildren().add(myPlayer);
-        System.out.println("player created");
 
         //create the obstacles
         obstacleArray = new ImageView[obstacleXCoordinates.length];
@@ -135,20 +135,19 @@ class BoxWorld {
     }
     
     public boolean onScreen(){
-    	return myPlayer.getTranslateX() <= myStage.getWidth() && myPlayer.getTranslateY() <= myStage.getHeight() 
+    	return myPlayer.getTranslateX() <= myScene.getWidth() && myPlayer.getTranslateY() <= myScene.getHeight() 
     			&& myPlayer.getTranslateX() >= 0 && myPlayer.getTranslateY() >= 0;
     }
      
     protected boolean checkAllCollisions(){
 	    boolean hasCollided = true;
+	    
 	    if (!onScreen()){
-    		//loseGame();
-    		//myStage.close();
-	    	winLevel();
+    		loseGame();
     	}
+	    System.out.println("checkend");
 	    //check if the exit has been reached 
 	    if (checkCollide(myExit)){
-	    	//you won the game screen; LILA
 	    	winLevel();
 	    }
 	    
@@ -166,26 +165,31 @@ class BoxWorld {
     }
 
     protected void winLevel(){
-      myNextLevel = new ItemBoxWorld();
-	  Scene scene = myNextLevel.init(myStage, myWidth, myHeight);
+  	  myAnimation.stop();
+      ItemBoxWorld nextLevel = new ItemBoxWorld();
+	  Scene scene = nextLevel.init(myStage, myWidth, myHeight);
 	  myStage.setScene(scene);
 	  myStage.show();
 
 	  // setup the game's loop
-	  KeyFrame frame = myNextLevel.start(NUM_FRAMES_PER_SECOND);
+	/*  KeyFrame frame = myNextLevel.start(NUM_FRAMES_PER_SECOND);
 	  Timeline animation = new Timeline();
 	  animation.setCycleCount(Animation.INDEFINITE);
 	  animation.getKeyFrames().add(frame);
-	  animation.play();
+	  animation.play();*/
     }
-    
-    private void loseGame(){
+
+    //lila myStage here cannot access the stage of the other game
+    protected void loseGame(){
+    	  myAnimation.stop();
+
     	  LoseScreen lose = new LoseScreen();
     	  Scene scene = lose.init(myStage, myWidth, myHeight);
+    	  System.out.println(myStage);
+    	  System.out.println(scene);
     	  myStage.setScene(scene);
     	  myStage.show();
-    //	  animation.getKeyFrames().remove(frame);
-    	  //stop keyframe
+
     }
     
     /**
@@ -235,6 +239,9 @@ class BoxWorld {
         }
         else if (keyCode == KeyCode.R){
         	reset();
+        }
+        else if (keyCode == KeyCode.S){
+        	winLevel();
         }
         else if (keyCode == KeyCode.H){ 
         	for (int i = 0; i < NUM_REAL_OBSTACLES; i ++){

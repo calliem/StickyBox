@@ -1,3 +1,4 @@
+import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.scene.Group;
@@ -24,6 +25,7 @@ public class ItemBoxWorld extends BoxWorld {
 	
     @Override
     public Scene init (Stage s, int width, int height) {
+	
     	myStage = s;
     	obstacleXCoordinates = new int[]{0, 120, 80, 320,280,520,480,440,520,480,280,200,240,520}; 
     	obstacleYCoordinates = new int[]{240,200,480,440,40, 80, 360, 40,640,520,600,560,280,200};
@@ -34,8 +36,15 @@ public class ItemBoxWorld extends BoxWorld {
     	myRoot = new Group();
       	addStarterObjects();
       	addAllItems();  
-        return createScene(width, height);
+      	
+    	 KeyFrame frame = start(NUM_FRAMES_PER_SECOND);
+		 myAnimation = new Timeline();
+		 myAnimation.setCycleCount(Animation.INDEFINITE);
+		 myAnimation.getKeyFrames().add(frame);
+		 myAnimation.play();
+         return createScene(width, height);
     }
+    
     
     private void addAllItems(){
     	System.out.println("222");
@@ -59,7 +68,8 @@ public class ItemBoxWorld extends BoxWorld {
     }
 
 	protected boolean checkAllCollisions(){
-    	if (itemExists(myItem1) && checkCollide(myItem1)){
+		
+		if (itemExists(myItem1) && checkCollide(myItem1)){
     		myRoot.getChildren().remove(myItem1);
     		itemCounter--;
     	}
@@ -90,13 +100,28 @@ public class ItemBoxWorld extends BoxWorld {
 			  myStage.show();	
 	    }
 		 else{
-			 myWarning = new Text("You must collect all items first before you can exit!");
-			 myWarning.setX(200);
-			 myWarning.setY(200);
-			 myWarning.setFill(Color.WHITE);
-			 myRoot.getChildren().add(myWarning);
+			 if (!itemExists(myWarning)){
+				 myWarning = new Text("You must collect all items first before you can exit!");
+				 myWarning.setX(200);
+				 myWarning.setY(200);
+			 	 myWarning.setFill(Color.WHITE);
+			 	 myRoot.getChildren().add(myWarning);
+			 }
 		 }	 
 	 }
+	 
+	 //why do i have to stick this in again :( LILA
+	 protected void loseGame(){
+   	  myAnimation.stop();
+
+   	  LoseScreen lose = new LoseScreen();
+   	  Scene scene = lose.init(myStage, myWidth, myHeight);
+   	  System.out.println(myStage);
+   	  System.out.println(scene);
+   	  myStage.setScene(scene);
+   	  myStage.show();
+
+   }
 	
 	 protected void reset(){
 		 super.reset();
