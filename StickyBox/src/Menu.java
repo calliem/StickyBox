@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 public class Menu {
 
 	private Group myRoot;
-    private ItemBoxWorld myGame;
+    private BoxWorld myGame;
     public Scene myScene;
 
     private static final int NUM_FRAMES_PER_SECOND = 60;
@@ -30,7 +30,7 @@ public class Menu {
     	  
     	  play.setOnAction(new EventHandler<ActionEvent>() {
     		  public void handle(ActionEvent e){
-	    		  myGame = new ItemBoxWorld();
+	    		  myGame = new BoxWorld();
 	    		  // attach game to the stage and display it
 	    		  Scene scene = myGame.init(s, width, height);
 	    		  s.setScene(scene);

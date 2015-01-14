@@ -28,8 +28,6 @@ public class Main extends Application {
         s.show();
     }
 
-    //public void clear??
-    
     /**
      * Start the program.
      */

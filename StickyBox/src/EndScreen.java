@@ -25,13 +25,13 @@ public class EndScreen {
     public Scene init (Stage s, int width, int height) {
     	  myRoot = new Group();
           
-          Text closer = new Text(100,300,"You Won!");
+          Text closer = new Text(140,300,"You Won!");
       	  closer.setFont(new Font(100));
       	  closer.setFill(Color.WHITE);
       	  
     	  Button play = new Button("Play Again?");
-    	  play.setTranslateX(330); 
-    	  play.setTranslateY(430);
+    	  play.setTranslateX(295); 
+    	  play.setTranslateY(400);
     	  
     	  play.setOnAction(new EventHandler<ActionEvent>() {
     		  public void handle(ActionEvent e){
@@ -42,14 +42,9 @@ public class EndScreen {
 	    		  s.show();
 		
 	    		  // setup the game's loop
-	    		  KeyFrame frame = myMenu.start(NUM_FRAMES_PER_SECOND);
-	    		  Timeline animation = new Timeline();
-	    		  animation.setCycleCount(Animation.INDEFINITE);
-	    		  animation.getKeyFrames().add(frame);
-	    		  animation.play();
+	    		 
     		  }
     	  }); 
-    	  
     	  
           myRoot.getChildren().add(closer);
     	  myRoot.getChildren().add(play);
@@ -57,6 +52,10 @@ public class EndScreen {
           myScene = new Scene(myRoot, width, height, Color.BLACK);
           return myScene;
     }
+    
+/*	 public KeyFrame start (int frameRate) {
+        return new KeyFrame(Duration.millis(1000 / frameRate), e -> updateSprites());
+    }*/
     
     
 }

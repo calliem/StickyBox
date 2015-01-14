@@ -1,5 +1,7 @@
+import javafx.animation.KeyFrame;
 import javafx.geometry.Point2D;
 import javafx.scene.shape.Rectangle;
+import javafx.util.Duration;
 
 public class StickyBox extends Rectangle{
 	protected int xMove;
@@ -9,7 +11,6 @@ public class StickyBox extends Rectangle{
 	protected int xPrev; //previous x-direction
 	protected int yPrev; //previous y-direction
 	
-	//movingXDirect and movingYDirect are going in the direction of movement where 0 and 1 would specify if moving in that direciton or not
 	public StickyBox(int xPos, int yPos, int xSize, int ySize, 
 			int speed, int movingXDirect, int movingYDirect, boolean stuck){ 
 		super(xPos, yPos, xSize, ySize);
@@ -73,4 +74,5 @@ public class StickyBox extends Rectangle{
 		return mySpeed;
 	}
 	
+
 }

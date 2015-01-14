@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 public class ItemBoxWorld extends BoxWorld {
 	
+	private Text myWarning;
 	private int itemCounter;
 	private ImageView myItem1;
 	private ImageView myItem2;
@@ -23,61 +24,44 @@ public class ItemBoxWorld extends BoxWorld {
 	
     @Override
     public Scene init (Stage s, int width, int height) {
-        //set obstacle coordinates for the level
     	myStage = s;
-    	obstacleXCoordinates = new int[]{0, 120, 80, 320,280,520,480,440,520,480,280,200,240}; 
-    	obstacleYCoordinates = new int[]{240,200,480,440,40, 80, 360, 40,640,520,600,560,280};
+    	obstacleXCoordinates = new int[]{0, 120, 80, 320,280,520,480,440,520,480,280,200,240,520}; 
+    	obstacleYCoordinates = new int[]{240,200,480,440,40, 80, 360, 40,640,520,600,560,280,200};
     	
-    	//don't need these instructions LILA. can add these and then make the first input activate this
-    	Text instructions = new Text(40,10,"Collect the items before leading Sticky Box to the exit");
-      	instructions.setWrappingWidth(400);
-      	instructions.setFill(Color.WHITE);
-      	
+    	myWidth = width;
+    	myHeight = height;
+     
     	myRoot = new Group();
-      	myRoot.getChildren().add(instructions);
-      	System.out.println(itemCounter);
-
       	addStarterObjects();
-      	addAllItems(); //itemXcoordinates, itemYcoordinates as parameters LILA 
+      	addAllItems();  
         return createScene(width, height);
     }
     
     private void addAllItems(){
+    	System.out.println("222");
       	itemCounter = NUM_OF_ITEMS;
-      	
-      	Rectangle rect = new Rectangle(0,0);
- 
       	if (!itemExists(myItem1)){
-      		addSingleItem(myItem1,280,320);
-      		
+      		myItem1 = addSingleItem(280,320);	
       	}
     	if (!itemExists(myItem2)){
-    		addSingleItem(myItem2,480,300);
+    		myItem2 = addSingleItem(480,300);
     	}
     }
     
-    private void addSingleItem(ImageView item, int xCoord, int yCoord){
-    	item = new ImageView(new Image(getClass().getResourceAsStream("images/coin.png")));
+    private ImageView addSingleItem(int xCoord, int yCoord){
+    	ImageView item = new ImageView(new Image(getClass().getResourceAsStream("images/coin.png")));
 		item.setX(xCoord); //make this into an item
 		item.setY(yCoord);
         item.setFitWidth(OBSTACLE_SIZE);
         myRoot.getChildren().add(item);
+        return item;
     	
     }
 
 	protected boolean checkAllCollisions(){
-		System.out.println(itemCounter);
-		/*if (checkCollide(myItem1)){
-			System.out.println("collide item 1 first if statement");
-			System.out.println(itemExists(myItem1));
-		}*/
-		System.out.println("itemExists" + itemExists(myItem1));
-		//System.out.println("checkCollide" + checkCollide(myItem1));
     	if (itemExists(myItem1) && checkCollide(myItem1)){
     		myRoot.getChildren().remove(myItem1);
     		itemCounter--;
-    		System.out.println("collide item 1 second if statement");
-    		//most likely it goes through a box and gets stuck
     	}
     	if (itemExists(myItem2) && checkCollide(myItem2)){
     		myRoot.getChildren().remove(myItem2);
@@ -87,14 +71,9 @@ public class ItemBoxWorld extends BoxWorld {
     }
 	
 	private boolean itemExists(Node item){
-		System.out.println("check starts");
-		
 		
 		for (Node node: myRoot.getChildren()){
-			System.out.println("node " + node);
-			System.out.println("item " + item);
 			if (node == item){
-				System.out.println("item still exists!");
 				return true;
 			}
 		}
@@ -103,32 +82,25 @@ public class ItemBoxWorld extends BoxWorld {
 	
 	 protected void winLevel(){
 		 if(itemCounter == 0){
-		    
+		      System.out.println("end game");
 			  EndScreen endGame = new EndScreen();
+			  
 			  Scene scene = endGame.init(myStage, myWidth, myHeight);
 			  myStage.setScene(scene);
-			  myStage.show();
-	
-			  // setup the game's loop
-			/*  KeyFrame frame = endGame.start(NUM_FRAMES_PER_SECOND);
-			  Timeline animation = new Timeline();
-			  animation.setCycleCount(Animation.INDEFINITE);
-			  animation.getKeyFrames().add(frame);
-			  animation.play();*/
+			  myStage.show();	
 	    }
 		 else{
-			 System.out.println("nope");
-			 Text warning = new Text("You must collect all items first! Press 'r' to restart.");
-			 warning.setX(200);
-			 warning.setY(200);
-			 warning.setFill(Color.WHITE);
-			 myRoot.getChildren().add(warning);
+			 myWarning = new Text("You must collect all items first before you can exit!");
+			 myWarning.setX(200);
+			 myWarning.setY(200);
+			 myWarning.setFill(Color.WHITE);
+			 myRoot.getChildren().add(myWarning);
 		 }	 
 	 }
-	 
+	
 	 protected void reset(){
 		 super.reset();
-		 addAllItems(); //might add too many items if i didn't collect all the items first
+		 addAllItems(); 
 		 
 	 }
 }
@@ -136,8 +108,5 @@ public class ItemBoxWorld extends BoxWorld {
 
     
     
-    
-
-//to do: restart level must put the items back. call init again instead? go back to original and create a restartLevel() method
 
 
