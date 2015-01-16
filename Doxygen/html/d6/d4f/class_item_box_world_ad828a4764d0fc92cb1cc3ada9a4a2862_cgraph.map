@@ -1,0 +1,6 @@
+<map id="ItemBoxWorld.reset" name="ItemBoxWorld.reset">
+<area shape="rect" id="node2" href="$d6/d4f/class_item_box_world.html#a7ead15fd9fd8095f928640161d48fdf8" title="ItemBoxWorld.addAllItems" alt="" coords="201,31,389,57"/>
+<area shape="rect" id="node3" href="$d6/d4f/class_item_box_world.html#af1bcde0672796e926560684004ed8e81" title="ItemBoxWorld.addSingleItem" alt="" coords="437,5,643,32"/>
+<area shape="rect" id="node5" href="$d6/d4f/class_item_box_world.html#a1890e6c53a4a73e44e9528009fde508d" title="ItemBoxWorld.itemExists" alt="" coords="451,56,629,83"/>
+<area shape="rect" id="node4" href="$db/d97/class_box_world.html#abb95adb381902ecab1db85efdc1ea6ff" title="BoxWorld.getRoot" alt="" coords="691,31,824,57"/>
+</map>
