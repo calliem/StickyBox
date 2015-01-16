@@ -1,6 +1,0 @@
-<map id="ItemBoxWorld.checkAllCollisions" name="ItemBoxWorld.checkAllCollisions">
-<area shape="rect" id="node2" href="$db/d97/class_box_world.html#a55add11037cd6dc48556f2f42a9e11be" title="BoxWorld.checkCollide" alt="" coords="285,31,448,57"/>
-<area shape="rect" id="node5" href="$d6/d4f/class_item_box_world.html#a1890e6c53a4a73e44e9528009fde508d" title="ItemBoxWorld.itemExists" alt="" coords="277,81,456,108"/>
-<area shape="rect" id="node3" href="$da/de2/class_sticky_box.html#a6ba3f89630df9d81df5644a3e5f4e387" title="StickyBox.getXDirection" alt="" coords="505,5,679,32"/>
-<area shape="rect" id="node4" href="$da/de2/class_sticky_box.html#a69e5ccf2a79159c03dea2e048df13318" title="StickyBox.getYDirection" alt="" coords="505,56,679,83"/>
-</map>

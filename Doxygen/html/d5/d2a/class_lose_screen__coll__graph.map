@@ -1,6 +1,0 @@
-<map id="LoseScreen" name="LoseScreen">
-<area shape="rect" id="node3" href="$d2/db8/class_menu.html" title="Menu" alt="" coords="714,280,771,307"/>
-<area shape="rect" id="node4" href="$db/d97/class_box_world.html" title="BoxWorld" alt="" coords="317,188,396,215"/>
-<area shape="rect" id="node8" href="$d6/d4f/class_item_box_world.html" title="ItemBoxWorld" alt="" coords="139,280,248,307"/>
-<area shape="rect" id="node10" href="$da/de2/class_sticky_box.html" title="StickyBox" alt="" coords="435,83,519,109"/>
-</map>
