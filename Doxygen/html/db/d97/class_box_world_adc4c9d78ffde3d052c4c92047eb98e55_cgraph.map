@@ -1,6 +1,0 @@
-<map id="BoxWorld.allowMovement" name="BoxWorld.allowMovement">
-<area shape="rect" id="node2" href="$da/de2/class_sticky_box.html#a6ba3f89630df9d81df5644a3e5f4e387" title="StickyBox.getXDirection" alt="" coords="238,5,413,32"/>
-<area shape="rect" id="node3" href="$da/de2/class_sticky_box.html#ab0bd7cafb7f243e3951558ddb8728b96" title="StickyBox.getXPrev" alt="" coords="253,56,398,83"/>
-<area shape="rect" id="node4" href="$da/de2/class_sticky_box.html#a69e5ccf2a79159c03dea2e048df13318" title="StickyBox.getYDirection" alt="" coords="239,107,412,133"/>
-<area shape="rect" id="node5" href="$da/de2/class_sticky_box.html#a4c6abed944faed9d9b226079e99cfc24" title="StickyBox.getYPrev" alt="" coords="253,157,397,184"/>
-</map>
