@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>CodePro Code Audit for codepro.audit</title>
+
+	<meta name="GENERATOR" content="CodePro Server"/>
+
+	<style type="text/css">
+	.highSeverity { background-color: #ff9999; }
+	.mediumSeverity { }
+	.lowSeverity { }
+	</style>
+
+	<style type="text/css">
+	body {font: 70% verdana,arial,helvetica; color: #000000}
+p  {margin-top:  3px; line-height: 1.5em}
+h1 {margin-top:  0px; margin-bottom: 6px; font: bold 150% verdana,arial,helvetica}
+h2 {margin-top: 12px; margin-bottom: 6px; font: bold 125% verdana,arial,helvetica}
+h3 {margin-top: 12px; margin-bottom: 6px; font: bold 100% verdana,arial,helvetica}
+h4 {margin-top: 12px; margin-bottom: 6px; font: bold 100% verdana,arial,helvetica}
+.rounded_page{display:block}
+.rounded_page *{display:block; height:1px; overflow:hidden; font-size:.01em; background:#7799DD}
+.rounded_page1{ margin-left:3px; margin-right:3px; padding-left:1px; padding-right:1px; border-left:1px solid #c4d3ef; border-right:1px solid #c4d3ef; background:#99b2e5}
+.rounded_page2{ margin-left:1px; margin-right:1px; padding-right:1px; padding-left:1px; border-left:1px solid #f1f4fa; border-right:1px solid #f1f4fa; background:#90ace3}
+.rounded_page3{ margin-left:1px; margin-right:1px; border-left:1px solid #90ace3; border-right:1px solid #90ace3;}
+.rounded_page4{ border-left:1px solid #c4d3ef; border-right:1px solid #c4d3ef}
+.rounded_page5{ border-left:1px solid #99b2e5; border-right:1px solid #99b2e5}
+.rounded_pagefg{ background:#7799DD}
+.rounded_section{display:block}
+.rounded_section *{display:block; height:1px; overflow:hidden; font-size:.01em; background:#C3D9FF}
+.rounded_section1{ margin-left:3px; margin-right:3px; padding-left:1px; padding-right:1px; border-left:1px solid #e5eefe; border-right:1px solid #e5eefe; background:#d2e2fe}
+.rounded_section2{ margin-left:1px; margin-right:1px; padding-right:1px; padding-left:1px; border-left:1px solid #f9fbfe; border-right:1px solid #f9fbfe; background:#cee0fe}
+.rounded_section3{ margin-left:1px; margin-right:1px; border-left:1px solid #cee0fe; border-right:1px solid #cee0fe;}
+.rounded_section4{ border-left:1px solid #e5eefe; border-right:1px solid #e5eefe}
+.rounded_section5{ border-left:1px solid #d2e2fe; border-right:1px solid #d2e2fe}
+.rounded_sectionfg{ background:#C3D9FF}
+.page-title { color: #FFFFFE; font-weight: bold; font-size: large; margin: 0px 0px 0px 8px; }
+.page-title-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.page-footer { color: #FFFFFE; font-weight: bold; margin-left: 8px}
+.page-footer-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.majorsection-title { color: #FFFFFE; font-weight: bold; margin: 0px 0px 0px 8px; }
+.majorsection-title-details { color: #FFFFFE; font-weight: bold; margin-right: 8px; margin-left: 8px; }
+.majorsection-contents { margin: 0px 0px 15px 16px; }
+.section-title { color: #1F4F8F; font-weight: bold; margin: 0px 0px 0px 6px; }
+.section-title-details { font-weight: bold; margin-left: 6px; margin-right: 6px; }
+.section-contents { margin: 6px 0px 15px 14px; }
+.bodyTable { border: 0px solid #777777; width:100%; border-collapse: collapse; }
+.bodyTable th { border: 1px solid #777777; white-space:nowrap; background-color: #EEEEEE; padding-left: 3px; padding-right: 3px; }
+.bodyTable td { border: 1px solid #777777; vertical-align: top; padding-left: 3px; padding-right: 3px; }
+td[class=emptyborder] { border: 0px solid #777777; padding: 3px 0px 3px 0px; }
+
+	</style>
+
+</head>
+
+<body>
+
+<div>
+		<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+		<div class="rounded_pagefg">
+			<h2 class="page-title"><a name="top">CodePro Code Audit for codepro.audit</a></h2>
+		</div>
+		<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+	</div>
+	<div class="majorsection-contents">
+		<p>This document contains the results of auditing codepro.audit at 1/16/15 4:43 AM, using the audit rule set CS 308.</p>
+	</div>
+	<table width="100%" border="0">
+		<tr>
+			<td valign="top" width="68%">
+				<div>
+					<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+					<div class="rounded_pagefg">
+						<h3 class="majorsection-title">Violations by Severity</h3>
+					</div>
+					<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+				</div>
+				<div class="section-contents">
+					<table>
+					<tr>
+					<td valign="top"><a href="#High">High</a>
+					</td></tr>
+					<tr>
+					<td valign="top"><a href="#Medium">Medium</a>
+					</td></tr>
+					<tr>
+					<td valign="top"><a href="#Low">Low</a>
+					</td></tr>
+					</table>
+				</div>
+			</td>
+			<td width="2%">
+				 </td>
+			<td valign="top" width="30%">
+				<div>
+					<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+					<div class="rounded_pagefg">
+						<h3 class="majorsection-title">Violation Counts by Severity</h3>
+					</div>
+					<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+				</div>
+				<div class="section-contents">
+					<table class="bodyTable">
+						<tr><th>Violation Severity</th><th>Violation Count</th></tr>
+						<tr class="a"><td>High</td><td align="right">78</td></tr>
+						<tr class="b"><td>Medium</td><td align="right">11</td></tr>
+						<tr class="a"><td>Low</td><td align="right">41</td></tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="section-contents">
+		<table class="bodyTable">
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="High">High (78)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Numeric_Literals">Numeric Literals (61)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 160</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line38">Invalid numeric literal: 360</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+38</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 720</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line39">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line40">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+40</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 160</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 320</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 120</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line41">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 120</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 320</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line41">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 240</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 480</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 440</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 80</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line43">Invalid numeric literal: 360</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+43</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 40</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 640</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 520</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 600</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 560</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 280</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Invalid numeric literal: 200</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid numeric literal: 150</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid numeric literal: 350</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line28">Invalid numeric literal: 100</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+28</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line32">Invalid numeric literal: 295</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line33">Invalid numeric literal: 400</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line67">Invalid numeric literal: 450</a></td>
+<td>
+Consider defining a constant name to represent the value.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+67</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="String_Literals">String Literals (17)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line97">Invalid string literal: &quot;images/finish.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+97</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line113">Invalid string literal: &quot;images/rock.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+113</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line185">Invalid string literal: &quot;you won&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+185</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line260">Invalid string literal: &quot;images/star.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+260</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line305">Invalid string literal: &quot;images/rock.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+BoxWorld.java</td>
+<td>
+305</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/EndScreen.html#line33">Invalid string literal: &quot;You Won!&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/EndScreen.html#line37">Invalid string literal: &quot;Play Again?&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+EndScreen.java</td>
+<td>
+37</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line77">Invalid string literal: &quot;images/coin.png&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+77</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line126">Invalid string literal: &quot;You must collect all items first before you can exit!&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+126</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/LoseScreen.html#line27">Invalid string literal: &quot;You Lost&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+27</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/LoseScreen.html#line31">Invalid string literal: &quot;Play Again?&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+LoseScreen.java</td>
+<td>
+31</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Main.html#line21">Invalid string literal: &quot;BoxWorld&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Main.java</td>
+<td>
+21</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line36">Invalid string literal: &quot;Play&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+36</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line56">Invalid string literal: &quot;Sticky Box&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+56</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line63">Invalid string literal: &quot;Guide sticky box to the white exit. &quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="highSeverity b"><td><a href="AuditViolations_files/Menu.html#line64">Invalid string literal: &quot;Sticky box can only move in a straight line but can stick to obstacles along the way. &quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="highSeverity a"><td><a href="AuditViolations_files/Menu.html#line65">Invalid string literal: &quot;Use the arrow keys to move. Press 'r' to restart the level, 's' to skip the level, and 'h' for a hint.&quot;</a></td>
+<td>
+Consider defining a constant to represent the string or move it to a resource bundle.		</td>
+<td>High</td>
+<td>
+Menu.java</td>
+<td>
+65</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Medium">Medium (11)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Constant_Field_Naming_Convention">Constant Field Naming Convention (4)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line32">Invalid constant name: &quot;ITEM1_X_COORD&quot; contains digits</a></td>
+<td>
+Rename the field from &quot;ITEM1_X_COORD&quot; to &quot;ITEM_X_COORD&quot;.		</td>
+<td>Medium</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+32</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line33">Invalid constant name: &quot;ITEM1_Y_COORD&quot; contains digits</a></td>
+<td>
+Rename the field from &quot;ITEM1_Y_COORD&quot; to &quot;ITEM_Y_COORD&quot;.		</td>
+<td>Medium</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+33</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line34">Invalid constant name: &quot;ITEM2_X_COORD&quot; contains digits</a></td>
+<td>
+Rename the field from &quot;ITEM2_X_COORD&quot; to &quot;ITEM_X_COORD&quot;.		</td>
+<td>Medium</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+34</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line35">Invalid constant name: &quot;ITEM2_Y_COORD&quot; contains digits</a></td>
+<td>
+Rename the field from &quot;ITEM2_Y_COORD&quot; to &quot;ITEM_Y_COORD&quot;.		</td>
+<td>Medium</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+35</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Cyclomatic_Complexity">Cyclomatic Complexity (2)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line204">Method is too complex (cyclomatic complexity = 16)</a></td>
+<td>
+Reduce the complexity of the method by extracting some of the code into a separate method.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+204</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line237">Method is too complex (cyclomatic complexity = 12)</a></td>
+<td>
+Reduce the complexity of the method by extracting some of the code into a separate method.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+237</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Instance_Field_Visibility">Instance Field Visibility (3)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line44">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="mediumSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line45">Invalid visibility for field: protected</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+45</td>
+</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/Menu.html#line22">Invalid visibility for field: public</a></td>
+<td>
+Correct the visibility of the field.		</td>
+<td>Medium</td>
+<td>
+Menu.java</td>
+<td>
+22</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Large_Number_of_Fields">Large Number of Fields (1)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line21">Too many fields: 11</a></td>
+<td>
+Reduce the number of fields by splitting the class into multiple smaller classes.		</td>
+<td>Medium</td>
+<td>
+BoxWorld.java</td>
+<td>
+21</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Large_Number_of_Parameters">Large Number of Parameters (1)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="mediumSeverity a"><td><a href="AuditViolations_files/StickyBox.html#line17">Too many parameters: 8</a></td>
+<td>
+Reduce the number of parameters by moving some of the values into a separate class.		</td>
+<td>Medium</td>
+<td>
+StickyBox.java</td>
+<td>
+17</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Low">Low (41)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+	</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Brace_Position">Brace Position (3)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line174">Closing braces should appear on a new line</a></td>
+<td>
+Move the closing brace to the next line.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+174</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line289">Closing braces should appear on a new line</a></td>
+<td>
+Move the closing brace to the next line.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+289</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line108">Closing braces should appear on a new line</a></td>
+<td>
+Move the closing brace to the next line.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+108</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Indent_Code_Within_Blocks">Indent Code Within Blocks (36)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line39">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+39</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line41">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+41</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line88">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+88</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line113">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+113</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line126">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+126</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line137">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+137</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line154">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+154</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line155">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+155</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line207">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+207</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line208">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+208</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line212">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+212</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line213">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+213</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line214">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+214</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line218">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+218</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line219">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+219</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line220">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+220</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line224">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+224</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line225">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+225</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line226">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+226</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line260">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+260</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line288">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+288</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line289">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+289</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line292">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+292</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/BoxWorld.html#line293">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+293</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/BoxWorld.html#line305">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+BoxWorld.java</td>
+<td>
+305</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line42">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+42</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line44">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+44</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/ItemBoxWorld.html#line77">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+77</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/ItemBoxWorld.html#line126">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+ItemBoxWorld.java</td>
+<td>
+126</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line60">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+60</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line61">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+61</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line62">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+62</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line63">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+63</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line64">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line65">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+65</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/StickyBox.html#line18">Code within a block is not indented</a></td>
+<td>
+Reformat the code so that the code within the block is properly indented one level more than the code containing the block.		</td>
+<td>Low</td>
+<td>
+StickyBox.java</td>
+<td>
+18</td>
+</tr>
+			<tr><td class="emptyborder" colspan="5"> </td></tr>
+			<tr><td class="emptyborder" colspan="5">&nbsp;
+			<div>
+				<b class="rounded_section"><b class="rounded_section1"><b></b></b><b class="rounded_section2"><b></b></b><b class="rounded_section3"></b><b class="rounded_section4"></b><b class="rounded_section5"></b></b>
+				<div class="rounded_sectionfg">
+					<h4 class="section-title"><a name="Line_Length">Line Length (2)</a></h4>
+				</div>
+				<b class="rounded_section"><b class="rounded_section5"></b><b class="rounded_section4"></b><b class="rounded_section3"></b><b class="rounded_section2"><b></b></b><b class="rounded_section1"><b></b></b></b>
+			</div>
+			</td></tr>
+			<tr><td class="emptyborder" colspan="5"></td></tr>
+	<tr class="a">
+			<th>Violation</th>
+<th>Recommendation</th>
+<th>Severity</th>
+<th>Resource</th>
+<th>Line</th>
+	</tr>
+	<tr class="lowSeverity a"><td><a href="AuditViolations_files/Menu.html#line64">Line 64 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+64</td>
+</tr>
+	<tr class="lowSeverity b"><td><a href="AuditViolations_files/Menu.html#line65">Line 65 is longer than 100 characters</a></td>
+<td>
+Break the line into multiple shorter lines.		</td>
+<td>Low</td>
+<td>
+Menu.java</td>
+<td>
+65</td>
+</tr>
+		</table>
+	</div>
+	<div>
+		<b class="rounded_page"><b class="rounded_page1"><b></b></b><b class="rounded_page2"><b></b></b><b class="rounded_page3"></b><b class="rounded_page4"></b><b class="rounded_page5"></b></b>
+		<div class="rounded_pagefg">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" ><tr><td valign="middle">
+			<span class="page-footer">Generated at 1/16/15 4:43 AM</span>
+			</td><td align="right" valign="middle">
+			<span class="page-footer-details">Powered by <span title="0.0.0, UNKNOWN">CodePro Server</span></span></td></tr></table>
+		</div>
+		<b class="rounded_page"><b class="rounded_page5"></b><b class="rounded_page4"></b><b class="rounded_page3"></b><b class="rounded_page2"><b></b></b><b class="rounded_page1"><b></b></b></b>
+	</div>
+
+</body>
+
+</html>

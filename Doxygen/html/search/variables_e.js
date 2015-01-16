@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['warning_5fx_5fcoord',['WARNING_X_COORD',['../d6/d4f/class_item_box_world.html#a213a240c953d14b2bc3b5bd6bb279501',1,'ItemBoxWorld']]],
+  ['warning_5fy_5fcoord',['WARNING_Y_COORD',['../d6/d4f/class_item_box_world.html#a99e238a074cabe0f115c5edf188d77ac',1,'ItemBoxWorld']]]
+];
