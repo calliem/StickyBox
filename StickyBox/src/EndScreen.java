@@ -20,17 +20,24 @@ public class EndScreen {
     private Group myRoot;
     private Scene myScene;
     private Menu myMenu;
+    
+    private static final int TEXT_X_COORD = 130;
+    private static final int TEXT_Y_COORD = 350;
+    private static final int FONT_SIZE = 100;
+    private static final int BUTTON_X_COORD = 295;
+    private static final int BUTTON_Y_COORD = 400;
+
 
     public Scene init (Stage s, int width, int height) {
         myRoot = new Group();
 
-        Text closer = new Text(130, 350, "You Won!");
-        closer.setFont(new Font(100));
-        closer.setFill(Color.WHITE);
+        Text youWon = new Text(TEXT_X_COORD, TEXT_Y_COORD, "You Won!");
+        youWon.setFont(new Font(FONT_SIZE));
+        youWon.setFill(Color.WHITE);
 
         Button play = new Button("Play Again?");
-        play.setTranslateX(295);
-        play.setTranslateY(400);
+        play.setTranslateX(BUTTON_X_COORD);
+        play.setTranslateY(BUTTON_Y_COORD);
 
         play.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -42,7 +49,7 @@ public class EndScreen {
             }
         });
 
-        myRoot.getChildren().add(closer);
+        myRoot.getChildren().add(youWon);
         myRoot.getChildren().add(play);
         myScene = new Scene(myRoot, width, height, Color.BLACK);
         return myScene;

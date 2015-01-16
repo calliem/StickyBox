@@ -20,14 +20,20 @@ public class Menu {
     private Group myRoot;
     private BoxWorld myGame;
     public Scene myScene;
+    
+    private static final int TEXT_X_COORD = 100;
+    private static final int TEXT_Y_COORD = 300;
+    private static final int FONT_SIZE = 100;
+    private static final int BUTTON_X_COORD = 330;
+    private static final int BUTTON_Y_COORD = 400;
 
     public Scene init (Stage s, int width, int height) {
         myRoot = new Group();
 
         addIntroText();
         Button play = new Button("Play");
-        play.setTranslateX(330);
-        play.setTranslateY(400);
+        play.setTranslateX(BUTTON_X_COORD);
+        play.setTranslateY(BUTTON_Y_COORD);
 
         play.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -45,8 +51,8 @@ public class Menu {
     }
 
     public void addIntroText () {
-        Text opener = new Text(100, 300, "Sticky Box");
-        opener.setFont(new Font(100));
+        Text opener = new Text(TEXT_X_COORD, TEXT_Y_COORD, "Sticky Box");
+        opener.setFont(new Font(FONT_SIZE));
         opener.setFill(Color.WHITE);
         Text instructions =
                 new Text(

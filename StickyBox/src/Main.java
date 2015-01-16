@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 public class Main extends Application {
     private Menu myMenu;
 
+    private static final int SCREEN_SIZE = 720;
+    
     /**
      * Set things up at the beginning.
      */
@@ -19,7 +21,7 @@ public class Main extends Application {
         s.setTitle("BoxWorld");
 
         myMenu = new Menu();
-        Scene scene = myMenu.init(s, 720, 720);
+        Scene scene = myMenu.init(s, SCREEN_SIZE, SCREEN_SIZE);
         s.setScene(scene);
         s.show();
     }

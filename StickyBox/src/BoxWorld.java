@@ -35,8 +35,10 @@ class BoxWorld {
     private Stage myStage;
     private StickyBox myPlayer;
 
-    private int[] obstacleXCoordinates;
-    private int[] obstacleYCoordinates;
+    private int[] obstacleXCoordinates = { 640, 600, 160, 200, 40, 80, 360,
+                                          200, 720, 0, 560, 720, 480, 80, 640 };
+    private int[] obstacleYCoordinates = { 0, 240, 200, 480, 440, 640, 600, 80,
+                                          160, 320, 480, 560, 120, 40, 640 };
     private ImageView[] obstacleArray;
 
     protected int myWidth;
@@ -55,10 +57,6 @@ class BoxWorld {
         myStage = s;
         myWidth = width;
         myHeight = height;
-        obstacleXCoordinates = new int[] { 640, 600, 160, 200, 40, 80, 360,
-                                          200, 720, 0, 560, 720, 480, 80, 640 };
-        obstacleYCoordinates = new int[] { 0, 240, 200, 480, 440, 640, 600, 80,
-                                          160, 320, 480, 560, 120, 40, 640 };
 
         myRoot = new Group();
         addStarterObjects();
@@ -149,7 +147,7 @@ class BoxWorld {
     /**
      * Checks if the passed in object parameter is within the game screen's
      * bounds
-     * 
+     *
      * @return true if object is on the screen and false if otherwise
      */
     public boolean onScreen (Node object) {
@@ -162,7 +160,7 @@ class BoxWorld {
      * Iterates through all obstacles and checks if the player has collided with
      * any. Advances to win screen if player collides with the exit and to the
      * lose screen if player is not one screen
-     * 
+     *
      * @return true if player has collided with any other obstacles and false
      *         otherwise
      */
@@ -200,7 +198,7 @@ class BoxWorld {
      * Checks if myPlayer has collided with a specific obstacle based on
      * myPlayer's movement direction and its x-coordinates and y-coordinates
      * relative to the obstacle's
-     * 
+     *
      * @return true if player has collided with obstacle and false otherwise
      */
 
@@ -267,7 +265,7 @@ class BoxWorld {
     }
 
     /**
-     * 
+     *
      * Resets the level by returning StickyBox back to its initial location in
      * the top left corner
      */
@@ -281,7 +279,7 @@ class BoxWorld {
 
     /**
      * Checks if Sticky Box can respond to a specific user input.
-     * 
+     *
      * @return true when Sticky Box is not moving and if the current direction
      *         input is different from that of the previous input (to ensure the
      *         box does not go through an obstacle); returns false otherwise
