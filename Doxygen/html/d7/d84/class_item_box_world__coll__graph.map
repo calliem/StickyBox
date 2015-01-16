@@ -1,0 +1,4 @@
+<map id="ItemBoxWorld" name="ItemBoxWorld">
+<area shape="rect" id="node2" href="$db/d97/class_box_world.html" title="BoxWorld" alt="" coords="249,188,328,215"/>
+<area shape="rect" id="node7" href="$da/de2/class_sticky_box.html" title="StickyBox" alt="" coords="343,83,427,109"/>
+</map>
