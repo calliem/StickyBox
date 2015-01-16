@@ -20,9 +20,11 @@ public class Menu {
     private Group myRoot;
     private BoxWorld myGame;
     public Scene myScene;
-    
-    private static final int TEXT_X_COORD = 100;
-    private static final int TEXT_Y_COORD = 300;
+
+    private static final int INTRO_X_COORD = 100;
+    private static final int INTRO_Y_COORD = 300;
+    private static final int TEXT_X_COORD = 150;
+    private static final int TEXT_Y_COORD = 350;
     private static final int FONT_SIZE = 100;
     private static final int BUTTON_X_COORD = 330;
     private static final int BUTTON_Y_COORD = 400;
@@ -51,13 +53,13 @@ public class Menu {
     }
 
     public void addIntroText () {
-        Text opener = new Text(TEXT_X_COORD, TEXT_Y_COORD, "Sticky Box");
+        Text opener = new Text(INTRO_X_COORD, INTRO_Y_COORD, "Sticky Box");
         opener.setFont(new Font(FONT_SIZE));
         opener.setFill(Color.WHITE);
         Text instructions =
                 new Text(
-                         150,
-                         350,
+                         TEXT_X_COORD,
+                         TEXT_Y_COORD,
                          "Guide sticky box to the white exit. "
                                  + "Sticky box can only move in a straight line but can stick to obstacles along the way. "
                                  + "Use the arrow keys to move. Press 'r' to restart the level, 's' to skip the level, and 'h' for a hint.");

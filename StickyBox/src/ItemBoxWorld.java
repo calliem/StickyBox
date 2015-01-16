@@ -26,6 +26,13 @@ public class ItemBoxWorld extends BoxWorld {
     private ImageView myItem2;
 
     private static final int NUM_OF_ITEMS = 2;
+    private static final int WARNING_X_COORD = 200;
+    private static final int WARNING_Y_COORD = 200;
+
+    private static final int ITEM1_X_COORD = 280;
+    private static final int ITEM1_Y_COORD = 320;
+    private static final int ITEM2_X_COORD = 480;
+    private static final int ITEM2_Y_COORD = 300;
 
     @Override
     public Scene init (Stage s, int width, int height) {
@@ -58,10 +65,10 @@ public class ItemBoxWorld extends BoxWorld {
     private void addAllItems () {
         itemCounter = NUM_OF_ITEMS;
         if (!itemExists(myItem1)) {
-            myItem1 = addSingleItem(280, 320);
+            myItem1 = addSingleItem(ITEM1_X_COORD, ITEM1_Y_COORD);
         }
         if (!itemExists(myItem2)) {
-            myItem2 = addSingleItem(480, 300);
+            myItem2 = addSingleItem(ITEM2_X_COORD, ITEM2_Y_COORD);
         }
     }
 
@@ -117,8 +124,8 @@ public class ItemBoxWorld extends BoxWorld {
             if (!itemExists(myWarning)) {
                 myWarning = new Text(
                                      "You must collect all items first before you can exit!");
-                myWarning.setX(200);
-                myWarning.setY(200);
+                myWarning.setX(WARNING_X_COORD);
+                myWarning.setY(WARNING_Y_COORD);
                 myWarning.setFill(Color.WHITE);
                 getRoot().getChildren().add(myWarning);
             }

@@ -20,13 +20,12 @@ public class EndScreen {
     private Group myRoot;
     private Scene myScene;
     private Menu myMenu;
-    
+
     private static final int TEXT_X_COORD = 130;
     private static final int TEXT_Y_COORD = 350;
     private static final int FONT_SIZE = 100;
     private static final int BUTTON_X_COORD = 295;
     private static final int BUTTON_Y_COORD = 400;
-
 
     public Scene init (Stage s, int width, int height) {
         myRoot = new Group();

@@ -94,8 +94,7 @@ class BoxWorld {
         createObstacleArray(obstacleXCoordinates, obstacleYCoordinates);
 
         // create the final exit
-        myExit = new ImageView(new Image(getClass().getResourceAsStream(
-                                                                        "images/finish.png")));
+        myExit = new ImageView(new Image(getClass().getResourceAsStream("images/finish.png")));
         myExit.setFitWidth(OBSTACLE_SIZE);
         myExit.setFitHeight(OBSTACLE_SIZE);
         myExit.setX(EXIT_COORDINATES);

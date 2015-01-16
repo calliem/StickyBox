@@ -12,7 +12,7 @@ public class Main extends Application {
     private Menu myMenu;
 
     private static final int SCREEN_SIZE = 720;
-    
+
     /**
      * Set things up at the beginning.
      */
