@@ -13,7 +13,7 @@ Hours worked: 27
 
 Resources used: JavaFX documentation library
 
-Main class file: Main.java
+Main class file: /StickyBox/src/Main.java
 
 Data (non Java) files needed: coin.png, finish.png, rock.png, star.png
 
