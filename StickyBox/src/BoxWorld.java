@@ -85,7 +85,7 @@ class BoxWorld {
 
         // create the player (Sticky Box)
         myPlayer = new StickyBox(0, 0, OBSTACLE_SIZE, OBSTACLE_SIZE,
-                                 PLAYER_SPEED, 0, 0, false);
+                                 PLAYER_SPEED, 0, 0);
         myPlayer.setFill(Color.WHITE);
         myRoot.getChildren().add(myPlayer);
 
@@ -131,14 +131,10 @@ class BoxWorld {
      *
      */
     public void updateSprites () {
-        if (checkAllCollisions() && !myPlayer.isStuck()) {
-            myPlayer.setStuck(true);
+        if (checkAllCollisions()) {
             myPlayer.setPreviousDirection(myPlayer.getXDirection(),
                                           myPlayer.getYDirection());
             myPlayer.setDirection(0, 0);
-        }
-        if (!checkAllCollisions() && myPlayer.isStuck()) {
-            myPlayer.setStuck(false);
         }
         myPlayer.move();
     }
@@ -182,7 +178,6 @@ class BoxWorld {
         Scene scene = nextLevel.init(myStage, myWidth, myHeight);
         myStage.setScene(scene);
         myStage.show();
-        System.out.println("you won");
     }
 
     protected void loseGame () {

@@ -10,28 +10,18 @@ public class StickyBox extends Rectangle {
     private int xMove;
     private int yMove;
     private int mySpeed;
-    private boolean isStuck;
     private int xPrev; // previous x-direction
     private int yPrev; // previous y-direction
 
     public StickyBox (int xPos, int yPos, int xSize, int ySize, int speed,
-                      int movingXDirect, int movingYDirect, boolean stuck) {
+                      int movingXDirect, int movingYDirect) {
         super(xPos, yPos, xSize, ySize);
         mySpeed = speed;
         xMove = movingXDirect;
         yMove = movingYDirect;
-        isStuck = stuck;
 
         xPrev = 0;
         yPrev = 0;
-    }
-
-    public boolean isStuck () {
-        return isStuck;
-    }
-
-    public void setStuck (boolean stuck) {
-        isStuck = stuck;
     }
 
     public void setDirection (int x, int y) {
