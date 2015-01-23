@@ -24,6 +24,8 @@ public class ItemBoxWorld extends BoxWorld {
     private int itemCounter;
     private ImageView myItem1;
     private ImageView myItem2;
+    private int myWidth;
+    private int myHeight;
 
     private static final int NUM_OF_ITEMS = 2;
     private static final int WARNING_X_COORD = 200;
@@ -36,23 +38,21 @@ public class ItemBoxWorld extends BoxWorld {
 
     @Override
     public Scene init (Stage s, int width, int height) {
-
+        myWidth = width;
+        myHeight = height;
+        
         setStage(s);
         setObstacleXCoordinates(new int[] { 0, 120, 80, 320, 280, 520, 480,
                                            440, 520, 480, 280, 200, 240, 520 });
         setObstacleYCoordinates(new int[] { 240, 200, 480, 440, 40, 80, 360,
                                            40, 640, 520, 600, 560, 280, 200 });
 
-        myWidth = width;
-        myHeight = height;
-
         setRoot(new Group());
         addStarterObjects();
         addAllItems();
-
+        
         KeyFrame frame = start(NUM_FRAMES_PER_SECOND);
         setAnimation(new Timeline());
-        // myAnimation = new Timeline();
         getAnimation().setCycleCount(Animation.INDEFINITE);
         getAnimation().getKeyFrames().add(frame);
         getAnimation().play();
@@ -88,11 +88,11 @@ public class ItemBoxWorld extends BoxWorld {
      */
     @Override
     protected boolean checkAllCollisions () {
-        if (itemExists(myItem1) && checkCollide(myItem1)) {
+        if (itemExists(myItem1) && getPlayer().checkCollide(myItem1)) {
             getRoot().getChildren().remove(myItem1);
             itemCounter--;
         }
-        if (itemExists(myItem2) && checkCollide(myItem2)) {
+        if (itemExists(myItem2) && getPlayer().checkCollide(myItem2)) {
             getRoot().getChildren().remove(myItem2);
             itemCounter--;
         }
@@ -103,7 +103,6 @@ public class ItemBoxWorld extends BoxWorld {
      * @return true if item is located on the game screen
      */
     private boolean itemExists (Node item) {
-
         for (Node node : getRoot().getChildren()) {
             if (node == item) { return true; }
         }
@@ -117,6 +116,10 @@ public class ItemBoxWorld extends BoxWorld {
             EndScreen endGame = new EndScreen();
 
             Scene scene = endGame.init(getStage(), myWidth, myHeight);
+            getStage().setScene(scene);
+            getStage().show();
+
+ 
             getStage().setScene(scene);
             getStage().show();
         }
@@ -138,13 +141,10 @@ public class ItemBoxWorld extends BoxWorld {
             itemCounter = 0;
             winLevel();
         }
+        if (e.getCode() == KeyCode.R) {
+            getPlayer().resetLocation();
+            addAllItems();
+        }
         super.handleKeyInput(e);
-    }
-
-    @Override
-    protected void reset () {
-        super.reset();
-        addAllItems();
-
     }
 }

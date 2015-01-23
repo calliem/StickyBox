@@ -19,7 +19,7 @@ public class Menu {
 
     private Group myRoot;
     private BoxWorld myGame;
-    public Scene myScene;
+    private Scene myScene;
 
     private static final int INTRO_X_COORD = 100;
     private static final int INTRO_Y_COORD = 300;

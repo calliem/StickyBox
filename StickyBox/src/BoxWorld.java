@@ -20,6 +20,10 @@ import javafx.util.Duration;
  */
 class BoxWorld {
     private static final int PLAYER_SPEED = 10;
+    private static final int PLAYER_INIT_X_COORD = 0;
+    private static final int PLAYER_INIT_Y_COORD = 0;
+    private static final int PLAYER_INIT_X_DIRECTION = 0;
+    private static final int PLAYER_INIT_Y_DIRECTION = 0;
     protected static final int OBSTACLE_SIZE = 40;
     protected static final int NUM_FRAMES_PER_SECOND = 60;
 
@@ -39,15 +43,15 @@ class BoxWorld {
                                           200, 720, 0, 560, 720, 480, 80, 640 };
     private int[] obstacleYCoordinates = { 0, 240, 200, 480, 440, 640, 600, 80,
                                           160, 320, 480, 560, 120, 40, 640 };
+    // the number of obstacles revealed in the hint
+    private int numHintObstacles = 7;
     private ImageView[] obstacleArray;
 
-    protected int myWidth;
-    protected int myHeight;
+    private int myWidth;
+    private int myHeight;
 
     // coordinates of the final exit
     private static final int EXIT_COORDINATES = 320;
-    // the number of obstacles revealed in the hint
-    private static final int NUM_HINT_OBSTACLES = 7;
 
     /**
      * Create the game's scene
@@ -84,16 +88,21 @@ class BoxWorld {
     protected void addStarterObjects () {
 
         // create the player (Sticky Box)
-        myPlayer = new StickyBox(0, 0, OBSTACLE_SIZE, OBSTACLE_SIZE,
-                                 PLAYER_SPEED, 0, 0);
+        myPlayer =
+                new StickyBox(PLAYER_INIT_X_COORD, PLAYER_INIT_Y_COORD, OBSTACLE_SIZE,
+                              OBSTACLE_SIZE,
+                              PLAYER_SPEED, PLAYER_INIT_X_DIRECTION, PLAYER_INIT_Y_DIRECTION);
         myPlayer.setFill(Color.WHITE);
         myRoot.getChildren().add(myPlayer);
 
         // create the obstacles
-        obstacleArray = new ImageView[obstacleXCoordinates.length];
         createObstacleArray(obstacleXCoordinates, obstacleYCoordinates);
 
-        // create the final exit
+        createExit();
+
+    }
+
+    private void createExit () {
         myExit = new ImageView(new Image(getClass().getResourceAsStream("images/finish.png")));
         myExit.setFitWidth(OBSTACLE_SIZE);
         myExit.setFitHeight(OBSTACLE_SIZE);
@@ -108,6 +117,7 @@ class BoxWorld {
      *
      */
     public void createObstacleArray (int[] xCoord, int[] yCoord) {
+        obstacleArray = new ImageView[obstacleXCoordinates.length];
         for (int i = 0; i < xCoord.length; i++) {
             obstacleArray[i] = new ImageView(new Image(getClass()
                     .getResourceAsStream("images/rock.png")));
@@ -132,9 +142,7 @@ class BoxWorld {
      */
     public void updateSprites () {
         if (checkAllCollisions()) {
-            myPlayer.setPreviousDirection(myPlayer.getXDirection(),
-                                          myPlayer.getYDirection());
-            myPlayer.setDirection(0, 0);
+            myPlayer.stop();
         }
         myPlayer.move();
     }
@@ -151,6 +159,8 @@ class BoxWorld {
                && object.getTranslateX() >= 0 && object.getTranslateY() >= 0;
     }
 
+    // LILA put into a gameObject class
+
     /**
      * Iterates through all obstacles and checks if the player has collided with
      * any. Advances to win screen if player collides with the exit and to the
@@ -163,11 +173,11 @@ class BoxWorld {
         if (!onScreen(myPlayer)) {
             loseGame();
         }
-        if (checkCollide(myExit)) {
+        if (myPlayer.checkCollide(myExit)) {
             winLevel();
         }
         for (int i = 0; i < obstacleXCoordinates.length; i++) {
-            if (checkCollide(obstacleArray[i])) { return true; }
+            if (myPlayer.checkCollide(obstacleArray[i])) { return true; }
         }
         return false;
     }
@@ -189,44 +199,6 @@ class BoxWorld {
     }
 
     /**
-     * Checks if myPlayer has collided with a specific obstacle based on
-     * myPlayer's movement direction and its x-coordinates and y-coordinates
-     * relative to the obstacle's
-     *
-     * @return true if player has collided with obstacle and false otherwise
-     */
-
-    protected boolean checkCollide (ImageView obstacle) {
-
-        if (myPlayer.getXDirection() == RIGHT && myPlayer.getYDirection() == 0
-            && myPlayer.getTranslateX() + OBSTACLE_SIZE == obstacle.getX()
-            && myPlayer.getTranslateY() == obstacle.getY()) {
-            return true;
-        }
-        else if (myPlayer.getXDirection() == LEFT
-                 && myPlayer.getYDirection() == 0
-                 && myPlayer.getTranslateX() - OBSTACLE_SIZE == obstacle.getX()
-                 && myPlayer.getTranslateY() == obstacle.getY()) {
-            return true;
-        }
-        else if (myPlayer.getXDirection() == 0
-                 && myPlayer.getYDirection() == UP
-                 && myPlayer.getTranslateY() - OBSTACLE_SIZE == obstacle.getY()
-                 && myPlayer.getTranslateX() == obstacle.getX()) {
-            return true;
-        }
-        else if (myPlayer.getXDirection() == 0
-                 && myPlayer.getYDirection() == DOWN
-                 && myPlayer.getTranslateY() + OBSTACLE_SIZE == obstacle.getY()
-                 && myPlayer.getTranslateX() == obstacle.getX()) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
-    /**
      * What to do each time a key is pressed
      */
     protected void handleKeyInput (KeyEvent e) {
@@ -244,31 +216,18 @@ class BoxWorld {
             myPlayer.setDirection(0, DOWN);
         }
         else if (keyCode == KeyCode.R) {
-            reset();
+            myPlayer.resetLocation();
         }
         else if (keyCode == KeyCode.S) {
             winLevel();
         }
         else if (keyCode == KeyCode.H) {
-            for (int i = 0; i < NUM_HINT_OBSTACLES; i++) {
+            for (int i = 0; i < numHintObstacles; i++) {
                 obstacleArray[i].setImage(new Image(getClass()
                         .getResourceAsStream("images/star.png")));
                 obstacleArray[i].setFitHeight(OBSTACLE_SIZE);
             }
         }
-    }
-
-    /**
-     *
-     * Resets the level by returning StickyBox back to its initial location in
-     * the top left corner
-     */
-
-    protected void reset () {
-        myPlayer.setDirection(0, 0);
-        myPlayer.setPreviousDirection(0, 0);
-        myPlayer.setTranslateX(0);
-        myPlayer.setTranslateY(0);
     }
 
     /**
@@ -295,7 +254,7 @@ class BoxWorld {
     protected void handleKeyRelease (KeyEvent e) {
         KeyCode keyCode = e.getCode();
         if (keyCode == KeyCode.H) {
-            for (int i = 0; i < NUM_HINT_OBSTACLES; i++) {
+            for (int i = 0; i < numHintObstacles; i++) {
                 obstacleArray[i].setImage(new Image(getClass()
                         .getResourceAsStream("images/rock.png")));
                 obstacleArray[i].setFitWidth(OBSTACLE_SIZE);
@@ -337,6 +296,5 @@ class BoxWorld {
 
     protected void setAnimation (Timeline animate) {
         myAnimation = animate;
-
     }
 }
